@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 33, 54);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+p{
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(255,255,255,0.2);
+  padding: 3em;
+  margin: 2rem;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46,54,68,0.03);
+  color: #1b1b1b;
+}
+
+.right{
+  margin: 2rem;
+}
+
+.left {
+  margin: 2rem;
+  text-align: left;
+}
+
+.btn {
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: 550;
+  padding: 1rem 1.5rem;
+  background: #228EE1;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  padding: 1rem 2rem;
+  background: #2878b6;
+  color: #1f1e1e;
+}
+
+
+.ball1,
+.ball2{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ball1{
+  top: 1vw;
+  left: 2vh;
+  background: rgb(19, 33, 161);
+}
+
+.ball2{
+  left: 85vw;
+  bottom: 2vh;
+  background: rgb(15, 158, 63);
+}
